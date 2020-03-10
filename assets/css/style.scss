@@ -1,0 +1,9 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// start content
+@import "../node_modules/bulma/sass/utilities/_all",
+        "../node_modules/bulma/sass/grid/columns",
+        "skins/{{ site.skin | default: 'classic' }}",
+        "initialize";
