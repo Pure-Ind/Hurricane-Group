@@ -1,17 +1,13 @@
-title: Your awesome title
+title: The Hurricane Group
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: The Hurricane Group
+  email: info@thehurricanegroup.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Providining the Windsor Region with unparalleled service in the sanitation and excavation industries.
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# generate social links in footer
-social_links:
-  twitter: jekyllrb
-  github:  jekyll
+logo: the-hurricane-group-logo.svg
 
 sass:
   load_paths:
@@ -20,10 +16,14 @@ sass:
 # this and add the path to the pages in order as they should show up
 #header_pages:
 # - about.md
-
+exclude:
+  - package.json
+  - README.md
+  - LICENSE.txt
+  - yarn.lock
+  
 # Build settings
 theme: hurricane-theme
 
 plugins:
- - jekyll-feed
  - jekyll-seo-tag
