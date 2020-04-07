@@ -2,8 +2,8 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-style: normal;
-    @include relative-font-size(2.75);
-    line-height: 1;
+    @include relative-font-size(2.45);
+    line-height: 1.2;
     letter-spacing: 1px;
 }
 
@@ -86,7 +86,7 @@ h1 {
    color: #fff;
    text-align: center;
    &-content {
-       width: 40%;
+       width: 55%;
    }
 }
   
