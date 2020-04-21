@@ -13,4 +13,13 @@
       </button>
     </div>
   </div>
+  <div class="navigation">
+    <div class="navigation-items"> 
+      <ul class="unstyled-list">
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </header>

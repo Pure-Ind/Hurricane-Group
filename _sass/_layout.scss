@@ -1,40 +1,3 @@
-
-header {
-  @media (max-width: 1200px){
-      height: 130px;
-      background: #fff;
-  }
-  .top-bar {
-    height: 40px;
-    width: 100%;
-    background: #111;
-  }
-  .header-container {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 0 80px;
-    top: 50px;
-    z-index: 999;
-    @media (max-width: 1600px){
-      padding: 0 40px;
-    }
-    @media (max-width: 1200px){
-      padding: 0 10px;
-    }
-    .header-logo {
-      img {
-        width: 250px;
-        height: auto;
-      }
-    }
-  }
-  .header-navigation {
-    position: absolute;
-    top: 0;
-    right: 20px;
-  }
-}
 .hero {
   height: 100vh;
   min-height: 1000px;
@@ -364,9 +327,6 @@ header {
         }
       }
       ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
         li {
           text-transform: uppercase;
           font-weight: 800;
@@ -844,9 +804,6 @@ margin-right: -19%;
       font-size: 22px;
     }
     ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
       li {
         padding: 10px 0;
       }
