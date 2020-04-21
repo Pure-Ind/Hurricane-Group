@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <div class="site container">
+        {%- include header.html -%}
+        <div class="inner-hero hero-about">
+          <div class="inner-hero-content">
+            <h1>Exceptional Services, <br>By Names You Can Trust </h1>
+          </div>
+        </div>
+         <div class="inner-content-small ">
+          <div class="columns">
+            <div class="column is-full text-content intro-section-text" style="padding-bottom: 20px;">
+                <p>The Hurricane Group is compromised of Hurricane Hydrovac, Hurricane SMS, Heaton Sanitation and Ken Lapain & Sons Ltd. With over 50 years of operational excellence, these four companies share one defining vision; to provide exceptional service through experience and versatility.  </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-content-small">
+          <div class="interior-companies">
+                <div class="company">
+                  <div class="company-inner">
+                    <div class="company-inner-image">
+                      <img src="{{ "/assets/images/truck.png" | relative_url }}" />
+                    </div>
+                    <div class="company-inner-content">
+                      <h4>Hurricane Hydrovac</h4>
+                      <p>As one of Southern Ontario's fastest-growing hydro excavation companies Hurricane Hydrovac specializes in non-destructive excavation using high-pressure water and a vacuum to loosen and remove soil, stone and any other debris or materials from the desired area.  We also specialize in septic and liquid waste removal and disposal, sewer and catch basin cleaning, and wet or dry industrial cleaning. This combination of services makes Hurrican Hydrovac the number one solution for utility and sewer maintenance and rehabilitation.    </p>
+                      <a href="/learn-more/">Learn More &rarr;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="company">
+                  <div class="company-inner">
+                   <div class="company-inner-content">
+                      <h4>Hurricane SMS</h4>
+                      <p>Complimenting offerings by the hydrovac division, Hurricane SMS provides a wide range of sewer maintenance services across Southwestern Ontario. Using top of the line equipment, we specialize in flush and video (CCTV inspections), Fog Testing, Grouting, Mandrel, Air Testing, and Trenchless Repair. Our experienced team can custom develop and deliver a full sewer inspection program.  All of our camera operators are MACP, LACP, & PACP Certified. </p>
+                      <a href="/learn-more/">Learn More &rarr;</a>
+                    </div>
+                    <div class="company-inner-image"></div>
+                   
+                  </div>
+                </div>
+                <div class="company">
+                  <div class="company-inner">
+                    <div class="company-inner-image">
+                        <img src="{{ "/assets/images/heaton.png" | relative_url }}" />
+                    </div>
+                    <div class="company-inner-content">
+                      <h4>Heaton Sanitation</h4>
+                      <p>With over 55 years of experience, Heaton Sanitation is a proven name in the Southwestern Ontario, especially the Windsor region, for all septic and waste removal services. Speciality services the company can provide includes grease trap cleaning, holding tank cleaning, septic tank inspections and cleaning, as well as oil removal.    </p>
+                      <a href="/learn-more/">Learn More &rarr;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="company">
+                  <div class="company-inner">
+                  <div class="company-inner-content">
+                      <h4>Ken Lapain &amp; Sons LTD.</h4>
+                      <p>In business for over 70 years, Ken Lapain and Sons Ltd. runs a well-equipped facility which has the capabilities to service and repair any commercial and heavy-duty vehicles and equipment.  This facility houses a full-service garage, fabrication and welding shop, body shop, and one of the largest sandblasting and paint facilities in Southwestern Ontario.  Servicing fleets as well as owner-operators Ken Lapain is a one-stop destination in Southwestern Ontario for any and all commercial and heavy-duty vehicle repairs. </p>
+                      <a href="/learn-more/">Learn More &rarr;</a>
+                    </div>
+                    <div class="company-inner-image"></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+       
+        <div class="wrapper">
+            {{ content }}
+        </div>
+
+        {%- include footer.html -%}
+    </div>
+  </body>
+
+</html>

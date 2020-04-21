@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <div class="site container">
+        {%- include header.html -%}
+        <div class="inner-hero hero-about">
+          <div class="inner-hero-content ">
+            <h1>One Team <br>Driven By Excellence</h1>
+          </div>
+        </div>
+        <div class="inner-content-small ">
+          <div class="columns">
+            <div class="column is-full intro-section-text text-content">
+                <p>The Hurricane Group is comprised of four companies with over 120 years of combined experience: Hurricane Hydrovac, Hurricane SMS, Heaton Sanitation, and Ken Lapain and Sons Ltd. All of these companies were built on the foundation of core family principles and values.  These same principles continue to be the guiding light for all four companies, combined with an overarching focus on integrity, professionalism, and quality workmanship. </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-content">
+            <div class="team">
+                <div class="team-member">
+                  <div class="team-member-inner">
+                    <div class="team-member-inner-image">
+                      <img src="{{ "/assets/images/blank-profile-picture.jpg" | relative_url }}" />
+                    </div>
+                    <div class="team-member-inner-content">
+                      <h4>Shawn O'Keefe</h4>
+                      <p>Shawn O'Keefe is responsible for overseeing the group of companies. Shawn graduated from the University of Windsor with a civil engineering degree. After graduation Shawn become President and shareholder of Michael O'Keefe Ltd. Shawn has over 25 years' experience in the civil construction industry. While Shawn's primary focus was excavation, his background, reputation and in-depth knowledge of technology has allowed him to successfully expand into other facets of the business.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-member">
+                  <div class="team-member-inner">
+                    <div class="team-member-inner-image">
+                      <img src="{{ "/assets/images/blank-profile-picture.jpg" | relative_url }}" />
+                    </div>
+                    <div class="team-member-inner-content">
+                      <h4>Max De Angelis</h4>
+                      <p>Max is responsible for overseeing the group of companies. Max started his career in construction over two decades ago as President of De Angelis Construction Inc.  Max is an innovative and results-oriented construction professional with extensive experience in all facets of construction across Ontario and Canada.  Through his commitment to excellence and a team-oriented approach, Max has been a catalyst in establishing the trusted Hurricane name. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+       
+        <div class="partners">
+          <div class="partners-inner">
+            <h2>Trusted By The Best</h2>
+            <div class="partners-inner-list">
+              <div class="partners-inner-list-item">
+                <div class="partner-content">
+                  <img src="{{ "/assets/images/logos/city-of-windsor-logo.png" | relative_url }}" />
+                </div>
+              </div>
+              <div class="partners-inner-list-item">
+                <div class="partner-content">
+                  <img src="{{ "/assets/images/logos/hurrciane-hydrovac-town-of-lakeshore.png" | relative_url }}" />
+                </div>
+              </div>
+              <div class="partners-inner-list-item">
+                <div class="partner-content">
+                  <img src="{{ "/assets/images/logos/hurricane-hydrovac-essex.png" | relative_url }}" />
+                </div>
+              </div>
+              <div class="partners-inner-list-item">
+                <div class="partner-content">
+                  <img src="{{ "/assets/images/logos/fortisgroup.png" | relative_url }}" />
+                </div>
+              </div>
+              <div class="partners-inner-list-item">
+                <div class="partner-content">
+                  <img src="{{ "/assets/images/logos/deangelis-construction.png" | relative_url }}" />
+                </div>
+              </div>
+              <div class="partners-inner-list-item">
+                <div class="partner-content">
+
+                </div>
+              </div>
+               <div class="partners-inner-list-item">
+                <div class="partner-content">
+
+                </div>
+              </div>
+               <div class="partners-inner-list-item">
+                <div class="partner-content">
+
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+        <div class="wrapper">
+            {{ content }}
+        </div>
+
+        {%- include footer.html -%}
+    </div>
+  </body>
+
+</html>

@@ -43,5 +43,8 @@ $on-large:         $on-laptop !default;
 
 @import
   "base",             // Defines element resets.
+  "buttons",
+  "headings",
+  "hamburger",
   "layout"           // Defines structure and style based on CSS selectors.
 ;

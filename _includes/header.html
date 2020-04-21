@@ -1,31 +1,16 @@
-<div class="top-bar">
-    <div class="top-bar-logo">
-
+<header>
+  <div class="top-bar"></div>
+  <div class="header-container">
+    <div class="header-logo">
+      <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1108475/the-hurricane-group-logo.svg" alt="The Hurricane Group"></a>
     </div>
-    <div class="top-bar-nav">
-        <form>
-            <label for="company-select">Our Sites:</label>
-            <select id="company-select" onChange="window.location.href=this.value">
-                <option>Select A Company</option>
-                {% for company in site.data.companies %}
-                    <option value="{{ company.website }}">
-                        {{ company.name }}
-                    </option>
-                {% endfor %}
-            </select>
-        </form>
+    <div class="header-navigation">
+      <button class="hamburger hamburger--elastic" type="button"
+        aria-label="Menu" aria-controls="navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
-    
-</div>
-<header class="site-header">
-    <div class="site-header-logo">
-        <a rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}" ><img src="./assets/images/{{ site.logo }}" alt="{{ site.title }}" /></a>
-    </div>
-    <nav class="site-nav">
-        <ul>
-            {% for item in site.data.navigation %}
-                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
+  </div>
 </header>

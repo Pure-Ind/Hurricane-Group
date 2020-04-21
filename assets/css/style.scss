@@ -4,5 +4,7 @@
 // start content
 @import "../node_modules/bulma/sass/utilities/_all",
         "../node_modules/bulma/sass/grid/columns",
+        "../node_modules/bulma/sass/elements/container",
+        "../node_modules/bulma/sass/form/_all",
         "skins/{{ site.skin | default: 'classic' }}",
         "initialize";

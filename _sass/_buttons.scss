@@ -1,0 +1,29 @@
+.btn {
+    font-family: inherit;
+      font-size: .875rem;
+      font-weight: 700;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 1.125rem;
+      padding: 1rem 1rem;
+      margin: 0;
+      height: auto;
+      border: 2px solid transparent;
+      vertical-align: middle;
+      -webkit-appearance: none;
+      color: inherit;
+      background-color: transparent;
+  
+  }
+  .btn-outline {
+      border-color: currentcolor;
+      display: block;
+      width: fit-content;
+      margin-top: 20px;
+      line-height: 1;
+      padding: 24px 35px;
+      text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
