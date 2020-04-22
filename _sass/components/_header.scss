@@ -22,6 +22,8 @@ header {
         padding: 0 10px;
       }
       .header-logo {
+        position: relative;
+        z-index: 777;
         img {
           width: 250px;
           height: auto;
