@@ -5,9 +5,54 @@ header {
         background: #fff;
     }
     .top-bar {
-      height: 40px;
+      padding: 5px 0;
       width: 100%;
       background: #111;
+      text-align: right;
+      &-select {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        
+      }
+      .selectParent {
+        width: 160px;
+        
+        position: relative;
+        &:before {
+          width: 30px;
+          height: 30px;
+          content: "";
+          top: -3px;
+          z-index: 2;
+          position: absolute;
+          left: -34px;
+          background-position: center;
+          background: url(../images/logos/hurricane-h-tiny.png);
+          background-size: contain;
+        }
+      }
+      
+      .selectParent select {
+        text-indent: 1px;
+        text-overflow: '';
+        width: 170px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 1;
+        font-weight: 800;
+        padding: 2px 2px 2px 2px;
+        margin-right: 10px;
+        border: none;
+        color: #fff;
+        background: transparent url("../images/down-icon.svg") no-repeat 110px center;
+        background-size: 15%;
+      }
     }
     .header-container {
       position: absolute;
