@@ -42,11 +42,17 @@ p {
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
+  @media (max-width: 1200px){
+    padding: 0 20px;
+  }
 }
 .container-1400 {
   width: 100%;
   margin: 0 auto;
   max-width: 1400px;
+  @media (max-width: 1500px){
+    padding: 0 20px;
+  }
 }
 
 .bold-link {

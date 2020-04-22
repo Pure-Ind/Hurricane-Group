@@ -135,6 +135,9 @@
 .intro-section {
   &-inner {
     height: 450px;
+    @media (max-width: 1200px){
+      height: auto;
+    }
   }
   &-large {
     &-text {
@@ -516,8 +519,12 @@ margin-right: -19%;
   }
   .team-members {
     position: relative;
-  z-index: 2;
+    z-index: 2;
     display: flex;
+    @media (max-width: 1200px){
+      flex-direction: column;
+      justify-content: center;
+    }
     &-person {
       padding: 20px 40px;
       h2,h3 {
@@ -531,17 +538,14 @@ margin-right: -19%;
       }
       .hex {
         display: inline-block;
-        width: 500px;
-        height: 500px;
-
-        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1108475/hurricane-team-photo.jpg');
-      background-size: cover;
-
+        width: 100%;
+        position: relative;
+        height: 100%;
         -webkit-clip-path: polygon(98.66025% 45%, 99.39693% 46.5798%, 99.84808% 48.26352%, 100% 50%, 99.84808% 51.73648%, 99.39693% 53.4202%, 98.66025% 55%, 78.66025% 89.64102%, 77.66044% 91.06889%, 76.42788% 92.30146%, 75% 93.30127%, 73.4202% 94.03794%, 71.73648% 94.48909%, 70% 94.64102%, 30% 94.64102%, 28.26352% 94.48909%, 26.5798% 94.03794%, 25% 93.30127%, 23.57212% 92.30146%, 22.33956% 91.06889%, 21.33975% 89.64102%, 1.33975% 55%, 0.60307% 53.4202%, 0.15192% 51.73648%, 0% 50%, 0.15192% 48.26352%, 0.60307% 46.5798%, 1.33975% 45%, 21.33975% 10.35898%, 22.33956% 8.93111%, 23.57212% 7.69854%, 25% 6.69873%, 26.5798% 5.96206%, 28.26352% 5.51091%, 30% 5.35898%, 70% 5.35898%, 71.73648% 5.51091%, 73.4202% 5.96206%, 75% 6.69873%, 76.42788% 7.69854%, 77.66044% 8.93111%, 78.66025% 10.35898%);
         clip-path: polygon(98.66025% 45%, 99.39693% 46.5798%, 99.84808% 48.26352%, 100% 50%, 99.84808% 51.73648%, 99.39693% 53.4202%, 98.66025% 55%, 78.66025% 89.64102%, 77.66044% 91.06889%, 76.42788% 92.30146%, 75% 93.30127%, 73.4202% 94.03794%, 71.73648% 94.48909%, 70% 94.64102%, 30% 94.64102%, 28.26352% 94.48909%, 26.5798% 94.03794%, 25% 93.30127%, 23.57212% 92.30146%, 22.33956% 91.06889%, 21.33975% 89.64102%, 1.33975% 55%, 0.60307% 53.4202%, 0.15192% 51.73648%, 0% 50%, 0.15192% 48.26352%, 0.60307% 46.5798%, 1.33975% 45%, 21.33975% 10.35898%, 22.33956% 8.93111%, 23.57212% 7.69854%, 25% 6.69873%, 26.5798% 5.96206%, 28.26352% 5.51091%, 30% 5.35898%, 70% 5.35898%, 71.73648% 5.51091%, 73.4202% 5.96206%, 75% 6.69873%, 76.42788% 7.69854%, 77.66044% 8.93111%, 78.66025% 10.35898%);
-        @media (max-width: 1600px){
-          width: 380px;
-          height: 380px;
+        img {
+          width: 100%;
+          height: auto;
         }
       }
     }
@@ -555,11 +559,17 @@ margin-right: -19%;
     padding: 80px 0;
     position: relative;
     z-index: 1;
-    &:last-of-type {
-      padding-bottom: 0;
+    @media (max-width: 1200px){
+      flex-direction: column;
+      padding: 40px 0;
     }
+    
     &-image {
       width: 33%;
+      @media (max-width: 1200px){
+        width: 100%;
+        text-align: center;
+      }
       .hex {
         display: inline-block;
         width: 100%;
@@ -582,6 +592,11 @@ margin-right: -19%;
             width: 45%;
           }
         }
+        @media (max-width: 1200px){
+            width: 80%;
+            height: 80%;
+            max-width: 500px;
+        }
       }
       img {
         width: 100%;
@@ -589,17 +604,27 @@ margin-right: -19%;
       }
     }
     &-description {
+      
       width: 66%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 0 80px;
+      @media (max-width: 1200px){
+        width: 100%;
+        text-align: center;
+        padding: 0;
+      }
+      
       h2 {
         text-transform: uppercase;
         margin-bottom: 30px;
       }
       .bold-link {
         margin-top: 40px;
+        @media (max-width: 1200px){
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -616,6 +641,9 @@ margin-right: -19%;
       background: url(../images/backgrounds/faded-worker.png);
       background-repeat: no-repeat;
       background-size: contain;
+      @media (max-width: 1200px){
+        display: none;
+      }
     }
     &:before {
       content: "";
@@ -628,6 +656,9 @@ margin-right: -19%;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center right;
+      @media (max-width: 1200px){
+        display: none;
+      }
     }
   }
   .wrapper-bottom {
@@ -635,8 +666,18 @@ margin-right: -19%;
     overflow: hidden;
     .company {
       flex-direction: row-reverse;
+      @media (max-width: 1200px){
+        flex-direction: column;
+        padding: 40px 0;
+      }
       &-description {
         text-align: right;
+        @media (max-width: 1200px){
+          text-align: center;
+        }
+      }
+      &:last-of-type {
+        padding-bottom: 0;
       }
     }
     &:after {
@@ -650,6 +691,9 @@ margin-right: -19%;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center right;
+      @media (max-width: 1200px){
+        display: none;
+      }
     }
     &:before {
       content: "";
@@ -662,6 +706,9 @@ margin-right: -19%;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center right;
+      @media (max-width: 1200px){
+        display: none;
+      }
     }
     
   }
@@ -814,7 +861,12 @@ margin-right: -19%;
   background: #fff;
   display: flex;
   position: relative;
-  
+  @media (max-width: 1200px){
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 40px 0;
+  }
  
   &-left,
   &-right {
@@ -829,6 +881,12 @@ margin-right: -19%;
     align-items: center;
     text-align: right;
     padding-right: 100px;
+    @media (max-width: 1200px){
+      text-align: center;
+      width: 100%;
+      justify-content: center;
+      padding: 20px;
+    }
   }
   &-right {
     width: 50%;
@@ -836,6 +894,10 @@ margin-right: -19%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: 1200px){
+      width: 100%;
+      justify-content: center;
+    }
   }
 }
 .footer-bottom {

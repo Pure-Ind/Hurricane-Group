@@ -63,7 +63,8 @@
             padding-left: 40px;
         }
         @media (max-width: 1200px){
-  
+          position: relative;
+          width: 100%;
           padding: 0 20px;
           p,
           h1 {
@@ -204,6 +205,23 @@
   .hero-inner {
     max-height: 900px;
     min-height: 900px;
+    
+    @media (max-width: 1200px){
+      max-height: inherit;
+      min-height: auto;
+      padding: 100px 0;
+      background: url('../images/hurricane-hero-interior.jpg');
+      background-size: cover;;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.38);
+      }
+    }
     .hero-right {
         background: url('../images/hurricane-hero-interior.jpg');
     }
