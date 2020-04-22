@@ -582,6 +582,7 @@ margin-right: -19%;
   }
   .wrapper-top {
     position: relative;
+    overflow: hidden;
     &:after {
       content: "";
       width: 50%;
@@ -608,6 +609,7 @@ margin-right: -19%;
   }
   .wrapper-bottom {
     position: relative;
+    overflow: hidden;
     .company {
       flex-direction: row-reverse;
       &-description {
@@ -684,6 +686,12 @@ margin-right: -19%;
     color: #ddd;
     font-weight: 600;
     line-height: 1;
+    position: relative;
+    z-index: 1;
+    a {
+      color: #ddd;
+      text-decoration: none;
+    }
     @media (max-width: 1200px){
       padding: 0;
     }
@@ -698,6 +706,9 @@ margin-right: -19%;
   .footer-companies {
     margin-top: 80px;
     padding: 0 100px;
+    position: relative;
+    z-index: 1;
+
     @media (max-width: 1200px){
       padding: 0;
     }
@@ -748,13 +759,7 @@ margin-right: -19%;
      }
   }
 }
-.faded-page-preview {
-  height: 650px;
-  width: 100%;
-  background: #fff;
-  display: flex;
-  position: relative;
-  
+.faded-page-preview-team {
   &:after {
     content: "";
     position: absolute;
@@ -762,10 +767,32 @@ margin-right: -19%;
     width: 60%;
     right: 0;
     top: 0;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1108475/hurricane-red-faded-truck.png');
+    background-image: url('../images/backgrounds/faded-preview-red-faded-truck.png');
     background-size: cover;
    
   }
+}
+.faded-page-preview-company {
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    top: 0;
+    background-image: url('../images/backgrounds/faded-preview-bg.png');
+    background-size: cover;
+   
+  }
+}
+.faded-page-preview {
+  height: 650px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  position: relative;
+  
+ 
   &-left,
   &-right {
     position: relative;
@@ -793,6 +820,8 @@ margin-right: -19%;
    width: 100%;
    max-width: 1400px;
    margin: 0 auto;
+   position: relative;
+   z-index: 1;
     display: flex;
   @media (max-width: 1200px){
     flex-direction: column;
