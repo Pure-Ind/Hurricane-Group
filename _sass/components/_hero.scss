@@ -56,7 +56,8 @@
         justify-content: center;
         height: 100%;
         padding-left: 80px;
-        position: relative;
+        position: absolute;
+        width: calc(100% + 160px);
         z-index: 2;
         @media (max-width: 1600px){
             padding-left: 40px;
@@ -87,6 +88,8 @@
           font-size:70px;
           
           margin: 4px 0;
+          // position: absolute;
+          // width: 100%;
           @media (max-width: 2000px){
             font-size: 65px;
           } 
