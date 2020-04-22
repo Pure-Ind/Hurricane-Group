@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5, p {
 p {
   font-size: 18px;
   line-height: 2;
+  font-weight: 300;
 }
 
 .outline-text {
@@ -35,4 +36,33 @@ p {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.container-1200 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.container-1400 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.bold-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
 }
