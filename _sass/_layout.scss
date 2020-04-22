@@ -555,6 +555,9 @@ margin-right: -19%;
     padding: 80px 0;
     position: relative;
     z-index: 1;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
     &-image {
       width: 33%;
       .hex {
