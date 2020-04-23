@@ -72,3 +72,10 @@ p {
     opacity: 1;
   }
 }
+
+@media (max-width: 1200px){
+  .mobile-hide {
+    display: none;
+  }
+}
+

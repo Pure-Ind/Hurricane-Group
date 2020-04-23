@@ -4,8 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="{{ "/assets/css/aos.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <noscript>
+    <style type="text/css">
+       html [data-aos] {
+        opacity: 1!important;
+        transform: none!important;
+      }
+    </style>
+  </noscript>
   <script
   src="https://code.jquery.com/jquery-3.5.0.min.js"
   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="

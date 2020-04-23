@@ -3,6 +3,8 @@ $('.hamburger').on('click', function(){
     $('.navigation').fadeToggle();
 });
 
+AOS.init();
+
 if($('#map').length !== 0){
     google.maps.event.addDomListener(window, 'load', init);
 }
