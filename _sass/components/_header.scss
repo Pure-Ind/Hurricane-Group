@@ -100,6 +100,35 @@ header {
     justify-content: center;
     align-items: center;
     display: none;
+    &-logo {
+      margin-bottom: 40px;
+      img {
+        opacity: 0.2;
+      }
+    }
+    &-contact {
+      margin-top: 40px;
+      color: #ddd;
+      line-height: 2;
+      position: relative;
+      z-index: 1;
+      font-size: 18px;
+      font-weight: 600;
+      a {
+        color: #ddd;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+    &-list {
+      a {
+        font-size: 44px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        text-decoration: none;
+      }
+    }
     &-items {
         text-align: center;
         height: 100%;
@@ -108,12 +137,6 @@ header {
         text-align: center;
         justify-content: center;
         align-items: center;
-        a {
-            font-size: 44px;
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: bold;
-            text-decoration: none;
-        }
+        flex-direction: column;
     }
 }

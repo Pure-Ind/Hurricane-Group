@@ -29,11 +29,18 @@
   </div>
   <div class="navigation" id="navigation">
     <div class="navigation-items"> 
-      <ul class="unstyled-list">
+      <div class="navigation-logo">
+        <img src="/assets/images/logos/hurricane/hurricane-group-logo-white.svg" alt="The Hurricane Group">
+      </div>
+      <ul class="unstyled-list navigation-list">
         {% for item in site.data.navigation %}
           <li><a href="{{ item.url }}">{{ item.title }}</a></li>
         {% endfor %}
       </ul>
+      <div class="navigation-contact">
+        E. <a href="mailto:info@hhydrovac.ca">info@hhydrovac.ca</a><br>
+        T. <a href="tel:519-726-6388">519-726-6388</a>
+      </div>
     </div>
   </div>
 </header>
