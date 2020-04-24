@@ -42,7 +42,7 @@ header {
       .selectParent select {
         text-indent: 1px;
         text-overflow: '';
-        width: 170px;
+        width: 140px;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -54,9 +54,20 @@ header {
         margin-right: 10px;
         border: none;
         color: #fff;
-        background: transparent url("../images/down-icon.svg") no-repeat 110px center;
-        background-size: 15%;
-        background-position-x: 115px;
+        background: #111;
+        position: relative;
+      }
+      .selectParent:after {
+        content: "";
+        width: 26px;
+        height: 30px;
+        content: "";
+        top: -1px;
+        z-index: 2;
+        position: absolute;
+        background: transparent url(../images/down-icon.svg) no-repeat center center;
+        background-size: contain;
+        right: 5px;
       }
     }
     .header-container {
