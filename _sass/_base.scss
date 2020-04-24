@@ -103,3 +103,20 @@ p {
   width: 100%; 
   left: 0; 
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .company-hex:before {
+    display: none!important;
+  }
+  .company-hex-title-inner {
+    max-width: 100%!important;
+  }
+  .company-hex-title-inner .hidden-content {
+    position: relative!important;
+          width: 100%!important;
+  }
+  .company-hex {
+    position: relative!important;
+    margin: 5px!Important!important; 
+  }
+}
