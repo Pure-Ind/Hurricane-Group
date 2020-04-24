@@ -103,3 +103,22 @@ p {
   width: 100%; 
   left: 0; 
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .company-hex {
+    position: relative;
+    margin: 5px!Important;
+    &:before {
+      display: none;
+    }
+    &-title {
+      &-inner {
+        max-width: 100%;
+        .hidden-content {
+          position: relative;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
