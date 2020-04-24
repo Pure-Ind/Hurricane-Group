@@ -65,3 +65,51 @@
 .site-footer .hvr-sweep-to-left:hover {
   color: #222;
 }
+
+.arrow-hover {
+  position: relative;
+  will-change: transform;
+}
+.arrow-hover:before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  right: -40px;
+  transition: all 0.2s ease;
+}
+
+.arrow-hover:hover:before {
+  right: -45px;
+  width: 35px;
+}
+
+.arrow-hover:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: -45px;
+  transition: all 0.2s ease;
+}
+
+.arrow-hover:hover:after {
+  right: -50px;
+}
+
+.arrow-hover-dark {
+  &:before {
+    background: #fff;
+  }
+  &:after {
+    border-color: transparent transparent transparent #222;
+  }
+}

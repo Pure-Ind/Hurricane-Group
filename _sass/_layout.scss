@@ -283,12 +283,33 @@ margin-right: -19%;
       font-weight: 600;
     }
   }
+  &:before {
+    content: "";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    bottom: 110px;
+    right: 0;
+    background: #fff;
+    margin-bottom: - 100%;
+    transition: all .3s ease;
+  }
   &:hover {    
+    // background: #fff;
+    &:before {
+      margin-bottom: 0;
+      bottom: 0;
+    }
     .company-hex-title {
       height: 100%;
+      background: none;
+      
+      &-inner {
+        margin-top: 30px;
+      }
+      // bottom: auto;
       .hidden-content {      
-        visibility: visible;
-        height: auto;
+        display: block;
         
       }
     }
@@ -306,28 +327,42 @@ margin-right: -19%;
     bottom: 20px;
     background: #fff;
     padding: 0 100px;
-    transition: all 0.5s ease;
+    transition-delay: .125s;
+    
+    transition: all 0.2s ease;
     will-change: transform;
-    h3 {
-          color: #fff;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 1;
+    &-inner {
+      position: relative;
+      
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 1;
+    }
+    
     img {
       padding: 5px 0 15px;
-      width: 75%;
+      width: 130px;
       height: auto; 
-      -webkit-backface-visibility: hidden;
+    }
+    .larger-logo {
+      img {
+        width: 150px;
+      }
     }
     .hidden-content {
-      visibility: hidden;
-      height: 0;
-      transition: all 0.5s ease;
+      display: none;
     }
     p {
-      
         font-size: 14px;
       line-height: 1.8;
       color: #222;

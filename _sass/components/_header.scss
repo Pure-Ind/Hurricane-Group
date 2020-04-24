@@ -140,3 +140,12 @@ header {
         flex-direction: column;
     }
 }
+
+.nav-down {
+  .header-container {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    
+  }
+}
