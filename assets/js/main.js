@@ -1,7 +1,8 @@
 $('.hamburger').on('click', function(){
-    $(this).toggleClass('is-active');
+    $('.hamburger').toggleClass('is-active');
     $('.navigation').fadeToggle();
 });
 
 AOS.init();
 
+$("#main-header").headroom();
