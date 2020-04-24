@@ -600,7 +600,9 @@ margin-right: -19%;
 }
 .inner-companies {
   padding: 180px 0;
-  
+  @media (max-width: 1200px){
+    padding: 60px 0;
+  }
   .company {
     display: flex;
     padding: 80px 0;
