@@ -28,8 +28,10 @@
         height: 100%;
         padding-left: 80px;
         padding-right: 120px;
+        
         @media (max-width: 1600px){
           padding: 0 20px;
+          margin-right: 125px;
         }
         h2 {
           font-size: 36px;
@@ -254,6 +256,13 @@
       width: 100%;
       max-width: 500px;
       height: auto;
+      @media (max-width: 1500px){
+        
+        max-width: 30vw;
+      }
+      @media (max-width: 1200px){
+        max-width: 100%;
+      }
     }
  
 }
@@ -653,6 +662,7 @@ margin-right: -19%;
       img {
         width: 100%;
         height: auto;
+       
       }
     }
     &-description {
