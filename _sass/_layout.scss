@@ -790,6 +790,9 @@ margin-right: -19%;
   background: #222;
   position: relative;
   overflow: hidden;
+  @media (max-width: 1200px){
+    text-align: center;
+  }
   &:after {
    width: 134%;
     height: 134%;
@@ -881,6 +884,9 @@ margin-right: -19%;
     overflow: hidden;
     position: relative;
     z-index: 5;
+    @media (max-width: 1200px){
+      text-align: center;
+    }
     label {
       padding-top: 20px;
        display: block;
