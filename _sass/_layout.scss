@@ -27,7 +27,7 @@
         justify-content: center;
         height: 100%;
         padding-left: 80px;
-        padding-right: 120px;
+        padding-right: 140px;
         
         @media (max-width: 1600px){
           padding: 0 20px;
@@ -151,6 +151,9 @@
       width: 100%;
     }
   }
+}
+.intro-section-small-side-inner {
+  width: 100px;
 }
 .home-companies {
   padding: 45px 0;
@@ -441,7 +444,7 @@ margin-right: -19%;
       }
     }
     &-side {
-      width: 125px;
+      width: 100px;
       height: 100%;
       position: absolute;
       right: 0;
