@@ -210,7 +210,7 @@
       z-index: 1;
       @media (max-width: 1200px){
         width: 100%;
-        text-align: left;
+        text-align: center;
         padding: 0 20px;
       }
       h4 {
@@ -228,6 +228,9 @@
         text-transform: uppercase;
         line-height: 1;
         font-weight: 800;
+        @media (max-width: 1200px){
+          font-size: 50px;
+        }
       }
     }
     &-right {
@@ -368,7 +371,7 @@ margin-right: -19%;
     }
     .larger-logo {
       img {
-        width: 150px;
+        width: 250px;
       }
     }
     .hidden-content {
