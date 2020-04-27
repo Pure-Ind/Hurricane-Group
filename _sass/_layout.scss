@@ -892,6 +892,9 @@ margin-right: -19%;
        display: block;
       font-size: 14px;
       color: #ddd;
+      @media (max-width: 1200px){
+        text-align: left;
+      }
     }
     textarea,
     input {
