@@ -1,7 +1,7 @@
 
 header {
     @media (max-width: 1200px){
-        height: 145px;
+        height: 105px;
         background: #fff;
         .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
           background: #222;
@@ -84,7 +84,9 @@ header {
       }
       @media (max-width: 1200px){
         padding: 0 10px;
+        top: 20px;
       }
+
       .header-logo {
         position: relative;
         z-index: 777;

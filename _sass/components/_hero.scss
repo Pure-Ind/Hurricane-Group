@@ -23,7 +23,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: rgba(128, 43, 43, 0.68);
+        background: rgba(0, 0, 0, 0.35);
       }
      }
     &-large-hexagon {
@@ -143,7 +143,7 @@
       margin: 0;
       width: 100%;
       background: #eee;
-      background: rgba(255, 255, 255, 0.42);
+      background: rgba(255, 255, 255, 0.22);
       flex-direction: row;
       padding: 20px;
       margin-top: 70px;
@@ -214,7 +214,7 @@
       max-height: inherit;
       min-height: auto;
       padding: 100px 0;
-      background: url('../images/hurricane-hero-interior.jpg');
+      background: url('../images/backgrounds/hurricane-bg-truck.jpg');
       background-size: cover;;
       &:after {
         position: absolute;
