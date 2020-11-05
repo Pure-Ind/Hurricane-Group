@@ -12,7 +12,7 @@
       max-height: initial;
       padding-top: 100px;
       flex-direction: column;
-      background: url('../images/backgrounds/hurricane-red-bg.jpg');
+      background: url('../images/backgrounds/hurricane-red-2.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: right;
@@ -124,7 +124,7 @@
       display: flex;
       align-items: center;
       width: 100%;
-      background: url('../images/backgrounds/hurricane-red-bg.jpg');
+      background: url('../images/backgrounds/hurricane-red-2.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: right;
@@ -227,7 +227,8 @@
       }
     }
     .hero-right {
-        background: url('../images/hurricane-hero-interior.jpg');
+        background: url('../images/backgrounds/hurricane-bg-truck.jpg');
+        background-position: center;
     }
     .hero-large-hexagon-side {
       width: 200px;
