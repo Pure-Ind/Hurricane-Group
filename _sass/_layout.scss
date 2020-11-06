@@ -60,6 +60,9 @@
       display: flex;
       right: 0;
       top: 0;
+      @media (max-width: 1200px){
+        display: none;
+      }
       svg,path {
         height: 100%;
       }
@@ -389,14 +392,14 @@
       width: 220px;
       height: auto; 
       @media (max-width: 1200px){
-        width: 100%;
+        width:80%;
       }
     }
     .larger-logo {
       img {
         width: 340px;
         @media (max-width: 1200px){
-          width: 100%;
+          width: 80%;
         }
       }
     }
