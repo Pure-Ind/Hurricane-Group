@@ -7,6 +7,10 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
+facebook: https://www.facebook.com/profile.php?id=100072676634523
+instagram: https://www.instagram.com/_thehurricanegroup/
+linkedin: https://www.linkedin.com/company/hurricanegroup
+
 logo: hurricane-group-logo.svg
 
 sass:

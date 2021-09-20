@@ -30,7 +30,25 @@
           <li><a href="/companies/#heaton"class="underline-hover">Heaton Sanitation</a></li>
           <li><a href="/companies/#lapain" class="underline-hover">Ken Lapain & Sons Ltd.</a></li>
         </ul>
+        
       </div>
+      <div class="simple-site-footer-social">
+        <ul>
+            {% if site.facebook %}
+            <li>
+                <a href="{{ site.facebook }}" target="_blank"><img src="/assets/images/icons/facebook-icon.svg" alt="Facebook Icon" /></a>                            
+            </li>
+            {% endif %}
+            {% if site.instagram %}
+            <li>
+                <a href="{{ site.instagram }}" target="_blank"><img src="/assets/images/icons/instagram-icon.svg" alt="Instagram Icon" /></a>                            
+            </li>
+            <li>
+                <a href="{{ site.linkedin }}" target="_blank"><img src="/assets/images/icons/linkedin-icon.svg" alt="Instagram Icon" /></a>                            
+            </li>
+            {% endif %}
+        </ul>
+        </div>
     </div>
   </div>
   <div class="footer-bottom">
