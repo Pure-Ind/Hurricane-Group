@@ -10,7 +10,7 @@
     <div class="hero">
       <div class="hero-large-hexagon">
         <div class="hero-large-hexagon-content">
-          <h1><span class="top-text">Four Companies</span> One <span class="outline-text">Vision</span></h1>
+          <h1>Four Companies One Vision.</h1>
           <p class="padding-top-20">With over 50 years of operational excellence, our four companies share one defining vision; to provide exceptional service through experience and versatility.</p>
           <p><a href="/companies/" class="btn btn-outline hvr-sweep-to-left">Learn More</a></p>
         </div>
@@ -32,8 +32,9 @@
                 d="M1.1305,31.31,2.6905,34l4.16,7,5.49,9.33a8.16,8.16,0,0,0,7,4h22.84a8.13,8.13,0,0,0,7-4l11.29-19a8.15,8.15,0,0,0,0-8.29l-1.45-2.46-3.51-6-6.22-10.52a8.15,8.15,0,0,0-7-4L19.4505,0a8.13,8.13,0,0,0-7,4L1.1405,23A8.17,8.17,0,0,0,1.1305,31.31Zm56.87-8.89Z"
                 style="fill: #222" />
             </svg>
-            <div class="hero-companies-item-image"><img
-                src="/assets/images/logos/hurricane/hurricane-hydrovac-tall-white.svg" alt="Hurricane Hydrovac Logo" /></div>
+            <div class="hero-companies-item-image">
+            <a href="https://hurricanehydrovac.ca" target="_blank"><img
+                src="/assets/images/logos/hurricane/hurricane-hydrovac-tall-white.svg" alt="Hurricane Hydrovac Logo" /></a></div>
           </div>
           <div class="hero-companies-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 61.6032 54.33"
@@ -42,8 +43,12 @@
                 d="M1.1305,31.31,2.6905,34l4.16,7,5.49,9.33a8.16,8.16,0,0,0,7,4h22.84a8.13,8.13,0,0,0,7-4l11.29-19a8.15,8.15,0,0,0,0-8.29l-1.45-2.46-3.51-6-6.22-10.52a8.15,8.15,0,0,0-7-4L19.4505,0a8.13,8.13,0,0,0-7,4L1.1405,23A8.17,8.17,0,0,0,1.1305,31.31Zm56.87-8.89Z"
                 style="fill: #222" />
             </svg>
-            <div class="hero-companies-item-image"><img
-                src="/assets/images/logos/hurricane/lapain-white.svg" alt="Ken Lapain and Sons Ltd. Logo" /></div>
+            <div class="hero-companies-item-image">
+              <a href="https://lapain.ca" target="_blank">
+              <img
+                src="/assets/images/logos/hurricane/lapain-white.svg" alt="Ken Lapain and Sons Ltd. Logo" />
+                </a>
+                </div>
           </div>
           <div class="hero-companies-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 61.6032 54.33"
@@ -52,8 +57,8 @@
                 d="M1.1305,31.31,2.6905,34l4.16,7,5.49,9.33a8.16,8.16,0,0,0,7,4h22.84a8.13,8.13,0,0,0,7-4l11.29-19a8.15,8.15,0,0,0,0-8.29l-1.45-2.46-3.51-6-6.22-10.52a8.15,8.15,0,0,0-7-4L19.4505,0a8.13,8.13,0,0,0-7,4L1.1405,23A8.17,8.17,0,0,0,1.1305,31.31Zm56.87-8.89Z"
                 style="fill: #222" />
             </svg>
-            <div class="hero-companies-item-image"><img
-                src="/assets/images/logos/hurricane/heaton-sanitation-white.svg" alt="Heaton Sanitation Logo" /></div>
+            <div class="hero-companies-item-image"><a href="https://heatonsanitation.ca" target="_blank"><img
+                src="/assets/images/logos/hurricane/heaton-sanitation-white.svg" alt="Heaton Sanitation Logo" /></a></div>
           </div>
           <div class="hero-companies-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 61.6032 54.33"
@@ -62,8 +67,8 @@
                 d="M1.1305,31.31,2.6905,34l4.16,7,5.49,9.33a8.16,8.16,0,0,0,7,4h22.84a8.13,8.13,0,0,0,7-4l11.29-19a8.15,8.15,0,0,0,0-8.29l-1.45-2.46-3.51-6-6.22-10.52a8.15,8.15,0,0,0-7-4L19.4505,0a8.13,8.13,0,0,0-7,4L1.1405,23A8.17,8.17,0,0,0,1.1305,31.31Zm56.87-8.89Z"
                 style="fill: #222" />
             </svg>
-            <div class="hero-companies-item-image"><img
-                src="/assets/images/logos/hurricane/hurricane-sms-tall-white.svg" alt="Hurricane SMS Logo" /></div>
+            <div class="hero-companies-item-image"><a href="https://hurricanesms.ca" target="_blank"><img
+                src="/assets/images/logos/hurricane/hurricane-sms-tall-white.svg" alt="Hurricane SMS Logo" /></a></div>
           </div>
 
         </div>
@@ -104,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div class="home-companies">
+    {%- comment -%} <div class="home-companies">
       <div class="home-companies-container">
         <div class="home-companies-container-left">
           <div class="heading" data-aos="fade-up">
@@ -187,8 +192,8 @@
           </div>
         </div>
       </div>
-    </div>
-    {%- include clients.html -%}
+    </div> {%- endcomment -%}
+    {%- include clients-alt.html -%}
     <div class="quote">
       <div class="quote-container">
         <div class="quote-quotation">

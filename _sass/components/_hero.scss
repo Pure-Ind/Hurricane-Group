@@ -176,6 +176,10 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        a {
+          width: 100%;
+          text-align: center;
+        }
         img {
           width: 55%;
           height: auto;
