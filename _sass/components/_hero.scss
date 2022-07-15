@@ -72,9 +72,9 @@
           h1 {
             color: #fff;
           }
-          .outline-text {
-            -webkit-text-stroke-color: #fff;
-          }
+          // .outline-text {
+          //   -webkit-text-stroke-color: #fff;
+          // }
           .btn-outline {
             color:#fff;
             background-color: #222;
@@ -82,7 +82,9 @@
         }
         .btn-outline {
           font-weight: 600;
-          border: 1px solid #222;
+          border: 2px solid #222;
+          background-color: #222;
+          color: #fff;
           width: max-content;
         }
         h1 {
@@ -94,23 +96,29 @@
           margin: 4px 0;
           // position: absolute;
           // width: 100%;
-          @media (max-width: 2000px){
-            font-size: 65px;
-          } 
-          @media (max-width: 1640px){
-            font-size: 50px;
-          } 
+          color: #222;
+          span {
+            color: #c4912c;
+          }
+          
+          // @media (max-width: 2000px){
+          //   font-size: 65px;
+          // } 
+          // @media (max-width: 1640px){
+          //   font-size: 50px;
+          // } 
            @media (max-width: 1200px){
             font-size: 80px;
+            color: #fff;
           } 
           @media (max-width: 600px){
             font-size: 60px;
           } 
-          .top-text {
-            font-size: .65em;
-            line-height: 1;
-            display: block;
-          }
+          // .top-text {
+          //   font-size: .65em;
+          //   line-height: 1;
+          //   display: block;
+          // }
         } 
         p {
           font-weight: 300;
